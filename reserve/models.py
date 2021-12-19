@@ -7,7 +7,7 @@ class Reserve(models.Model):
     firstName = models.CharField(max_length=200)
     lastName = models.CharField(max_length=200)
     email = models.EmailField()
-    phone = models.IntegerField()
+    phone = models.CharField(max_length=8)
     resaDate = models.DateField()
     guestNumbr = models.PositiveIntegerField()
     timeFrom = models.TimeField()
